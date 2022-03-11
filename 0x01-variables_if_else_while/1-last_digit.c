@@ -1,4 +1,5 @@
 #include <stdlib>
+#include <stdio.h>
 #include <time.h>
 
 /**
