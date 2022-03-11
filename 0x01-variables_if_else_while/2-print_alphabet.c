@@ -14,11 +14,10 @@
 int main(void)
 {
 	int i;
-	int ch;
 
 	for (i = 97; i <= 122; i++)
 	{
-		puts(ch);
+		putchar(i);
 	}
 	return (0);
 }
