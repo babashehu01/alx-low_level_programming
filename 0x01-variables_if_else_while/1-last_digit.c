@@ -22,7 +22,7 @@ int main(void)
 
 	/* Checking the last digit of the entered integer n */
 
-	last_digit = n % 10;
+	ld = n % 10;
 
 	/*checking the condition if the last digit is > 5, or = 0, <6*/
 
