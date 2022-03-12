@@ -10,15 +10,12 @@ int main(void)
 	int i;
 	int j;
 
-	for(i = 97; i <= 122; i++)
+	for (i = 48; i <= 57; i++)
 	{
-		for(j = 97; j <= 122; j++)
-		{
-			putchar(i);
-			putchar(',');
-			putchar(j);
-		}
-		putchar('\n');
-	}
+		putchar(i);
+		putchar(',');
+	}	
+	putchar('\n');
+	
 	return (0);
 }
