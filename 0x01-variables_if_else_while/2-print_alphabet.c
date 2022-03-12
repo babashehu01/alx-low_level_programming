@@ -13,10 +13,9 @@
 
 int main(void)
 {
-	char c;
+	int ch;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (ch = 97; ch <= 122; ch++)
 		putchar(c);
-
 	return (0);
 }
