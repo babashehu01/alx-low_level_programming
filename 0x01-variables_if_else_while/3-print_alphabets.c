@@ -4,15 +4,18 @@
   * main - Entry point
   *
   * Return: Always 0 (Success)
+  * Author: Babashehu Shettima Musti
+  * Program: Prints a-z in both lower and upper case
   */
 int main(void)
 {
-	char up;
-	char dn;
+	int up;
+	int dn;
 
-	for (up = 'a'; up <= 'z'; up++)
+	for (up = 97; up <= 122; up++)
 		putchar(up);
-	for (dn = 'A'; dn <= "Z"; dn++)
+	for (dn = 65; dn <= 90; dn++)
 		putchar(dn);
+	putchar('\n');
 	return (0);
 }
