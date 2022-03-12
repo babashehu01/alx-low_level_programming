@@ -11,11 +11,11 @@
   */
 int main(void)
 {
-	int ch;
+	char ch;
 
-	for (ch = 97; ch <= 122; ch++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (char(ch) == 'q' || char(ch) == 'e')
+		if (ch == 'q' || ch == 'e')
 			continue;
 		else
 			putchar(ch);
