@@ -23,10 +23,13 @@ int main(void)
 		{
 			putchar(i);
 			putchar(j);
-			putchar(',');
-			putchar(' ');
+			/* Checking the last digit not to print a comma */
+			if (i != 56 && j != 57)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
-	putchar(',');
 	return (0);
 }
