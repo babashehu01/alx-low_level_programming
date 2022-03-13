@@ -1,18 +1,25 @@
 #include <stdio.h>
 
 /**
-  * main - Entry point
+  * main - Entry point.
   *
-  * Return: Always 0 (Success)
+  * Return: Always 0 (Success).
+  *
+  * Author: Babashehu Shettima Musti.
+  * Program: prints all possible different combinations of two digits.
+  * Date: 13-March-2022
   */
 int main(void)
 {
+	/* Variables that are gonna hold my loop */
 	int i;
-	int j;
+	int j = 0;
 
-	for (i = 48; i <= 56; i++)
+	/* Outer loop (Determines the number the first index is holding) */
+	for (i = 48; i <= 57; i++)
 	{
-		for (j = 49; j <= 57; j++)
+		/* Inner loop (Determines the starting point of the 2nd number) */
+		for (j = i + 1; j <= 57; j++)
 		{
 			putchar(i);
 			putchar(j);
