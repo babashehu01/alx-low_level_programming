@@ -22,12 +22,12 @@ int main(void)
 		{
 			for (k = 48; k <= 57; k++)
 			{
-				if (e != i && e != g && i != g && e < i && i < g)
+				if (j != i && j != k && i != k && j < i && i < k)
 				{
-					putchar(e);
+					putchar(j);
 					putchar(i);
-					putchar(g);
-					if (i == 56 && e == 55 && g == 57)
+					putchar(k);
+					if (i == 56 && j == 55 && k == 57)
 					{
 						break;
 					}
