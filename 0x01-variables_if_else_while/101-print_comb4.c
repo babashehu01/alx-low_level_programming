@@ -18,15 +18,21 @@ int main(void)
 
 	for (i = 48; i <= 57; i++)
 	{
-		for (j = 49; j <= 57; j++)
+		for (j = 48; j <= 57; j++)
 		{
-			for (k = 50; k <= 57; k++)
+			for (k = 48; k <= 57; k++)
 			{
-				putchar(i);
-				putchar(j);
-				putchar(k);
-				putchar(',');
-				putchar(' ');
+				if (e != i && e != g && i != g && e < i && i < g)
+				{
+					putchar(e);
+					putchar(i);
+					putchar(g);
+					if (i == 56 && e == 55 && g == 57)
+					{
+						break;
+					}
+					putchar(',');
+					putchar(' ');
 			}
 		}
 	}
