@@ -11,11 +11,11 @@ int main(void)
 
 	for (l = 48; l <= 57; l++)
 	{
-		for(k = 48; k <= 57; k++)
+		for (k = 48; k <= 57; k++)
 		{
-			for(j = 48; j <= 57)
+			for (j = 48; j <= 57; j++)
 			{
-				for(i = 48; i <= 57; i++)
+				for (i = 48; i <= 57; i++)
 				{
 					op1 = (l * 10) + k;
 					op2 = (j * 10) + i;
@@ -35,6 +35,6 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
