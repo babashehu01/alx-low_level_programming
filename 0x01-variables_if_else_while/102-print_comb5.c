@@ -17,20 +17,20 @@ int main(void)
 			{
 				for (i = 48; i <= 57; i++)
 				{
-					op1 = (l * 10) + k;
-					op2 = (j * 10) + i;
-					if (op1 < op2)
-					{
-						putchar(l);
-						putchar(k);
-						putchar(' ');
-						putchar(j);
-						putchar(i);
-						if (l == 57 && k == 56 && j == 57 && i == 57)
-							break;
-						putchar(',');
-						putchar(' ');
-					}
+				op1 = (l * 10) + k;
+				op2 = (j * 10) + i;
+				if (op1 < op2)
+				{
+					putchar(l);
+					putchar(k);
+					putchar(' ');
+					putchar(j);
+					putchar(i);
+				if (l == 57 && k == 56 && j == 57 && i == 57)
+					break;
+					putchar(',');
+					putchar(' ');
+				}
 				}
 			}
 		}
