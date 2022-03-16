@@ -6,13 +6,14 @@
   */
 int main(void)
 {
-	int mult_3;
+	int mult_3 = 1;
+	int b;
 
-	mult_3 = 3;
 	while (mult_3 < 1024)
 	{
-		mult_3 += 3;
+		if ((mult_3 % 3) == 0 || (mult_3 % 5) == 0)
+			b += mult_3
 	}
-	printf("%d", mult_3);
+	printf("%d\n", b);
 	return (0);
 }
