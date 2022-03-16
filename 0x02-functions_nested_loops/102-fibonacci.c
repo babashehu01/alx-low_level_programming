@@ -10,11 +10,11 @@ int main(void)
 	int i;
 
 	/*initialize first and second terms*/
-	int t1 = 1;
-	int t2 = 2;
+	long int t1 = 1;
+	long int t2 = 2;
 
 	/* initialize the next term (3rd term)*/
-	int nextTerm = t1 + t2;
+	long int nextTerm = t1 + t2;
 
 	/* print the first two terms t1 and t2*/
 	printf("%d, %d, ", t1, t2);
