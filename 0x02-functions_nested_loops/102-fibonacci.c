@@ -7,7 +7,7 @@
   */
 int main(void)
 {
-	int i, n;
+	int i;
 
 	/*initialize first and second terms*/
 	int t1 = 1;
