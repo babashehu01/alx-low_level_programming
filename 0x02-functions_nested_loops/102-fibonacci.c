@@ -20,7 +20,7 @@ int main(void)
 	printf("%ld, %ld, ", t1, t2);
 
 	/* print 3rd to 50th terms*/
-	for (i = 0; i < 48; ++i)
+	for (i = 0; i < 49; ++i)
 	{
 		nextTerm = t1 + t2;
 		printf("%ld, ", nextTerm);
