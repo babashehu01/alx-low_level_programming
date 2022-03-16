@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 /**
-  * main - Sums the multiples of 3
-  * Return: Always 0 (Success)
-  */
+ * main - Prints natural numbers below 1024 that are
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int mult_3 = 1;
-	int b;
+	int a, b;
 
-	while (mult_3 < 1024)
+	for (a = 1; a < 1024; a++)
 	{
-		if ((mult_3 % 3) == 0 || (mult_3 % 5) == 0)
-			b += mult_3;
+		if ((a % 3) == 0 || (a % 5) == 0)
+			b += a;
 	}
 	printf("%d\n", b);
 	return (0);
