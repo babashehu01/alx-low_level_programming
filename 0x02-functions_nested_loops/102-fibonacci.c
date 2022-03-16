@@ -20,12 +20,12 @@ int main(void)
 	printf("%ld, %ld, ", t1, t2);
 
 	/* print 3rd to 50th terms*/
-	for (i = 4; i <= 50; ++i)
+	for (i = 0; i < 48; ++i)
 	{
+		nextTerm = t1 + t2;
 		printf("%ld, ", nextTerm);
 		t1 = t2;
 		t2 = nextTerm;
-		nextTerm = t1 + t2;
 	}
 	printf("\n");
 	return (0);
