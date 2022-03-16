@@ -17,13 +17,13 @@ int main(void)
 	long int nextTerm = t1 + t2;
 
 	/* print the first two terms t1 and t2*/
-	printf("%ld, %ld, ", t1, t2);
+	printf("%ld, %ld", t1, t2);
 
 	/* print 3rd to 50th terms*/
-	for (i = 0; i < 49; ++i)
+	for (i = 0; i < 48; ++i)
 	{
 		nextTerm = t1 + t2;
-		printf("%ld, ", nextTerm);
+		printf(", %ld", nextTerm);
 		t1 = t2;
 		t2 = nextTerm;
 	}
