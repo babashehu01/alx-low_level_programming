@@ -12,7 +12,7 @@ int main(void)
 	while (mult_3 < 1024)
 	{
 		if ((mult_3 % 3) == 0 || (mult_3 % 5) == 0)
-			b += mult_3
+			b += mult_3;
 	}
 	printf("%d\n", b);
 	return (0);
