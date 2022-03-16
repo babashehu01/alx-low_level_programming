@@ -17,7 +17,7 @@ int main(void)
 	long int nextTerm = t1 + t2;
 
 	/* print the first two terms t1 and t2*/
-	printf("l%d, %ld, ", t1, t2);
+	printf("%ld, %ld, ", t1, t2);
 
 	/* print 3rd to 50th terms*/
 	for (i = 4; i <= 50; ++i)
