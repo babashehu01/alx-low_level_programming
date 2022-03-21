@@ -17,7 +17,7 @@ void puts_half(char *str)
 	}
 
 	/* checking conditions for printing */
-	for (i = 0; i < length, i++)
+	for (i = 0; i < length; i++)
 		if (length % 2 != 0)
 		{
 			n = (length - 1) / 2;
