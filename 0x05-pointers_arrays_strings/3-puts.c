@@ -23,5 +23,6 @@ void _puts(char *str)
 		/* printing the string */
 		_putchar(str[length]);
 	}
+	_putchar('\n');
 
 }
