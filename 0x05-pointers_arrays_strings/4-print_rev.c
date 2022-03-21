@@ -17,8 +17,6 @@ void print_rev(char *s)
 		i++;
 	}
 	/* printing the string from descending order */
-	for (i = length; i > 0; i--)
+	for (i = length; i >= 0; i--)
 		_putchar(s[i]);
-	/* New line at the end */
-	_putchar('\n');
 }
