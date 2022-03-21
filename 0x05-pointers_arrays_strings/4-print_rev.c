@@ -9,7 +9,7 @@ void print_rev(char *s)
 {
 	int i, length;
 
-	i = 0, lenght = 0;
+	i = 0, length = 0;
 	/* getting the length of the string */
 	while (s[i] != '\0')
 	{
