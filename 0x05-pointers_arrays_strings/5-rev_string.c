@@ -7,7 +7,7 @@
   */
 void re_string(char *s)
 {
-	int i = 0, length 0, swap;
+	int i = 0, length = 0, swap;
 
 	/* getting the length of the string */
 	while (s[i] != '\0')
