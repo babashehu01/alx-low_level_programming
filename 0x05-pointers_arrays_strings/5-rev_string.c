@@ -20,6 +20,7 @@ void re_string(char *s)
 	{
 		swap = s[i];
 		s[i] = s[length - i];
+		s[length - 1] = swap;
 	}
 	/* printing the string */
 	for (i = 0; i < length; i++)
