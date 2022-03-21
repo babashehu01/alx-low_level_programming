@@ -21,8 +21,7 @@ void _puts(char *str)
 	for (i = 0; i < length; i++)
 	{
 		/* printing the string */
-		write(1, str[i], 1);
+		_putchar(str[length]);
 	}
-
 
 }
