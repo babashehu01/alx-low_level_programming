@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-  * re_string - reverses a string
+  * rev_string - reverses a string
   * @s: is the reversing string
   * return: no return value
   */
-void re_string(char *s)
+void rev_string(char *s)
 {
 	int i = 0, length = 0, swap;
 
