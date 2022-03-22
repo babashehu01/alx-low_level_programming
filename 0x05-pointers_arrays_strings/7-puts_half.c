@@ -17,11 +17,9 @@ void puts_half(char *str)
 	}
 
 	/* checking conditions for printing */
-	for (i = 0; i < length; i++)
-		if (length % 2 != 0)
-		{
-			n = (length - 1) / 2;
-			_putchar(str[n]);
-		}
+	for (i = 0; i < length / 2; i++)
+	{
+		_putchar(str[length--]);
+	}
 	_putchar('\n');
 }
