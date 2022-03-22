@@ -12,11 +12,9 @@ void rev_string(char *s)
 	/* getting the length of the string */
 	while (s[i] != '\0')
 	{
-		_putchar(s[i]);
 		length++;
 		i++;
 	}
-	_putchar('\n');
 	/* swaping the strings */
 	for (i = 0; i < length / 2; i++)
 	{
@@ -25,8 +23,4 @@ void rev_string(char *s)
 		s[length - 1 - i] = swap;
 	}
 	/* printing the string */
-	for (i = 0; i < length; i++)
-	{
-		_putchar(s[i]);
-	}
 }
