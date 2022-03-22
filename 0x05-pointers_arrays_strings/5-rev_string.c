@@ -20,8 +20,8 @@ void rev_string(char *s)
 	{
 		_putchar(s[i]);
 		swap = s[i];
-		s[i] = s[length - 1 - i];
-		s[length - 1 - i] = swap;
+		s[i] = s[length - i];
+		s[length - i] = swap;
 	}
 	/* printing the string */
 	for (i = 0; i < length; i++)
