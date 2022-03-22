@@ -16,11 +16,12 @@ void rev_string(char *s)
 		i++;
 	}
 	/* swaping the strings */
-	for (i = 0; i <= length / 2; i++)
+	for (i = 0; i < length / 2; i++)
 	{
+		_putchar(s[i]);
 		swap = s[i];
-		s[i] = s[length - i];
-		s[length - 1] = swap;
+		s[i] = s[length - 1 - i];
+		s[length - 1 - i] = swap;
 	}
 	/* printing the string */
 	for (i = 0; i < length; i++)
