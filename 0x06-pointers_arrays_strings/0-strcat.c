@@ -9,7 +9,7 @@ char *_strcat(char *dest, char *src)
 {
         int i = 0, j, len1 = 0;
         /* getting the destination length */
-        while(dest[i] != '\0')
+        while (dest[i] != '\0')
         {
                 len1++;
                 i++;
@@ -18,8 +18,7 @@ char *_strcat(char *dest, char *src)
         {
                 dest[i] = src[j];
         }
+	dest[i] = '\0';
         return (dest);
-        _putchar('\n');
-
 }
 
