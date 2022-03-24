@@ -7,18 +7,24 @@
  */
 char *_strcat(char *dest, char *src)
 {
-        int i = 0, j, len1 = 0;
-        /* getting the destination length */
-        while (dest[i] != '\0')
-        {
-                len1++;
-                i++;
-        }
-        for (i = len1 + 1, j = 0; src[i] != '\0'; i++, j++)
-        {
-                dest[i] = src[j];
-        }
-	dest[i] = '\0';
-        return (dest);
+	int i = 0, j = 0, len1 = 0, len2 = 0;
+	/* getting the destination length */
+	while (dest[i] != '\0')
+	{
+		len1++;
+		i++;
+	}
+	/* getting length of src */
+	while (src[j] != '\0')
+	{
+		len2++;
+		i++;
+	}
+	/* appending source into destination */
+	for (i = 0; i <= len2; i++)
+	{
+		dest[len2 + i] = src[i];
+	}
+	return (dest);
 }
 
