@@ -1,21 +1,19 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
  * _strcmp - compares two strings
  * @s1: first string
  * @s2: second string
- * Return: 0 if equal or j if not
+ * Return: 0 if equal or b if not
  */
-_strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
-	int i, j;
+	int a = 0;
+	int b = 0;
 
-	i = 0, j = 0;
-	while (s1[i] != '\0' && s2[i] != '\0' && s1 == s2)
+	while (s1[a] != '\0' && b == 0)
 	{
-		/* Adding values of si and s2 */
-		j = s1[i] - s2[i];
-		i++;
+		b = s1[a] - s2[a];
+		a++;
 	}
-	return (j);
+	return (b);
 }
