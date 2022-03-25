@@ -1,28 +1,29 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * leet - encrypts a string into 1337
- * @s: is the string
- * Return: encrypted string
+ * leet - encodes a string
+ * @str: the string to encode
+ *
+ * Return: the encode string
  */
-char *leet(char *s)
+char *leet(char *str)
 {
-	int i, j, code, repl;
+	int i, j;
+	char c[] = "aAeEoOtTlL";
+	char n[] = "4433007711";
 
-	char code[] = "aAeEoOtTlL";
-	char repl[] = "4433007711";
 	i = 0;
-	while (s[i] != '\0')
+	while (str[i] != '\0')
 	{
 		j = 0;
-		while (code[j] != '\0')
+		while (c[j] != '\0')
 		{
-			if (str[i] == code[j])
+			if (str[i] == c[j])
 			{
-				str[i] = repl[j];
+				str[i] = n[j];
 			}
 			j++;
 		}
 		i++;
 	}
+	return (str);
 }
