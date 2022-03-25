@@ -1,30 +1,30 @@
-#include "main.h"
+#include "holberton.h"
 /**
- * _strcat - joins two strings together
- * @dest: where it is going to be joint to
- * @src: the string to be joint
- * Return: concatenated string
+ * _strcat - concatenates two strings
+ * @dest: input parameter string
+ * @src: input parameter string
+ *
+ * Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
-	int i = 0, j = 0, len1 = 0, len2 = 0;
-	/* getting the destination length */
-	while (dest[i] != '\0')
+	int a;
+	int b;
+
+	a = 0;
+
+	while (dest[a] != '\0')
 	{
-		len1++;
-		i++;
+		a++;
 	}
-	/* getting length of src */
-	while (src[j] != '\0')
+
+	b = 0;
+
+	while (src[b] != '\0')
 	{
-		len2++;
-		i++;
-	}
-	/* appending source into destination */
-	for (i = 0; i <= len2; i++)
-	{
-		dest[len2 + 1 + i] = src[i];
+		dest[a] = src[b];
+		a++;
+		b++;
 	}
 	return (dest);
 }
-
