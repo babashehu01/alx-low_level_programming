@@ -23,7 +23,7 @@ char *_strcat(char *dest, char *src)
 	/* appending source into destination */
 	for (i = 0; i <= len2; i++)
 	{
-		dest[len2 + i] = src[i];
+		dest[len2 + 1 + i] = src[i];
 	}
 	return (dest);
 }
