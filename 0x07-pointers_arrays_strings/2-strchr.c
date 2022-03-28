@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
- * _strchr - checks for a special character in a string
- * @s: is the string to be checked
- * @c: store the first occurence of a character
- * 
- * Return: @c
+ * _strchr - locates a character in a string
+ * @s: the memory area
+ * @c: constant byte
+ *
+ * Return: a pointer when the character is found
  */
 char *_strchr(char *s, char c)
 {
@@ -15,7 +14,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			return (&s);
+			return (&s[i]);
 		}
 		i++;
 	}
