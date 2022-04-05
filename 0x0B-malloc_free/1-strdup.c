@@ -14,6 +14,9 @@ char *_strdup(char *str)
 		return (NULL);
 	/* Allcoating new space */
 	new_malloc = malloc(sizeof(str));
+	/* checking condition */
+	if (new_malloc == NULL)
+		return (NULL);
 	/* Copying the string */
 	for (i = 0; str[i] != '\0'; i++)
 	{
