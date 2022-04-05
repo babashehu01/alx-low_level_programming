@@ -22,7 +22,6 @@ char *_strdup(char *str)
 	{
 		new_malloc[i] = str[i];
 	}
-	new_malloc += '\0';
 	return (new_malloc);
 	free(new_malloc);
 
