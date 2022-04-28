@@ -2,7 +2,10 @@
 *.o
 
 # Ignore main files
-*-main.c
+*main.c*
 
 # Ignore executable files
 *.out
+
+#Ignore putchar.c
+*_putchar.c*
