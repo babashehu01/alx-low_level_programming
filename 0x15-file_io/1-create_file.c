@@ -6,7 +6,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, str_len;
+	int fd, _strlen;
 
 	if (!filename)
 		return (-1);
@@ -16,7 +16,7 @@ int create_file(const char *filename, char *text_content)
 	if (!text_content)
 		text_content = "";
 	/* getting the string length */
-	for (_strlen = 0; text_content[i] != NULL; _strlen++)
+	for (_strlen = 0; text_content[_strlen]; _strlen++)
 		;
 	write(fd, text_content, _strlen);
 	close(fd);
